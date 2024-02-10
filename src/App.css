@@ -1,0 +1,42 @@
+:root {
+	--amarelo: #FFE164;
+	--branco: #FFF;
+	--cinza: #F9F9F9;
+	--cinza-medio: #EEEEEE;
+	--cinza-escuro: #9E9E9E;
+	--escuro: #1E2328;
+	--escuro-medio: #3A3A3A;
+	--escuro-azul: #153045;
+	--laranja: #F8B83B;
+	--verde:  #3BF841;
+	--vermelho:  #E84C3C;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	display: grid;
+	font-family: 'Arvo', serif;
+	grid-template-areas:
+	"cabecalho"
+	"conteudo"
+	"rodape";
+	grid-template-columns: 100%;
+	grid-template-rows: auto;
+	justify-content: center;
+	min-width: 320px;
+}
+
+header {
+	grid-area: cabecalho;
+}
+
+main {
+	grid-area: conteudo;
+}
+
+footer {
+	grid-area: rodape;
+}
