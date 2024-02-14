@@ -18,7 +18,6 @@ html {
 
 body {
 	display: grid;
-	font-family: 'Arvo', serif;
 	grid-template-areas:
 	"cabecalho"
 	"conteudo"

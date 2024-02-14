@@ -1,0 +1,17 @@
+[
+	{
+		"nome": "Planilha de Gestão de Gado de Corte",
+		"preco": "100",
+		"thumb": "./src/assets/gestao_gado_corte"
+	},
+	{
+		"nome": "Planilha de Gestão de Imóveis",
+		"preco": "80",
+		"thumb": "./src/assets/gestao_imoveis"
+	},
+	{
+		"nome": "Planilha de Controle de Gastos",
+		"preco": "40",
+		"thumb": "./src/assets/controle_gastos"
+	}
+]
