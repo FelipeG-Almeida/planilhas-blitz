@@ -1,17 +1,20 @@
 [
 	{
-		"nome": "Planilha de Gestão de Gado de Corte",
-		"preco": "100",
-		"thumb": "./src/assets/gestao_gado_corte"
+		"nome": "Planilha de Gestão de Gado",
+		"preco": 100,
+		"thumb": "./src/assets/thumbs/gestao_gado_corte.png",
+		"path": ""
 	},
 	{
 		"nome": "Planilha de Gestão de Imóveis",
-		"preco": "80",
-		"thumb": "./src/assets/gestao_imoveis"
+		"preco": 80,
+		"thumb": "./src/assets/thumbs/gestao_imoveis.png",
+		"path": ""
 	},
 	{
 		"nome": "Planilha de Controle de Gastos",
-		"preco": "40",
-		"thumb": "./src/assets/controle_gastos"
+		"preco": 40,
+		"thumb": "./src/assets/thumbs/controle_gastos.png",
+		"path": ""
 	}
 ]
