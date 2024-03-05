@@ -5,6 +5,7 @@ import Footer from './components/Footer/Footer';
 import { BrowserRouter } from 'react-router-dom';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
+import { fas } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
 	return (
@@ -17,4 +18,4 @@ function App() {
 }
 
 export default App;
-library.add(fab);
+library.add(fab, fas);

@@ -1,4 +1,5 @@
 import * as S from './styles';
+import Button from '../../components/Button/Button';
 
 export default function Sobre() {
 	return (
@@ -11,12 +12,12 @@ export default function Sobre() {
 				</S.Texto>
 			</S.Cabecalho>
 
-			<section class="sobre__conteudo">
-				<div class="sobre__conteudo--container">
-					<h2 class="sobre__conteudo--titulo titulo--1">
+			<S.Conteudo>
+				<S.ConteudoContainer>
+					<S.ConteudoTitulo $icon="./src/assets/icons/interrogacao.png">
 						Quem somos
-					</h2>
-					<p class="sobre__conteudo--texto">
+					</S.ConteudoTitulo>
+					<S.ConteudoTexto>
 						Nossa organização tem como objetivo fornecer aos nossos
 						clientes, sejam proprietários de negócios ou alguém que
 						queira dinamizar alguma área na vida pessoal, a
@@ -24,13 +25,13 @@ export default function Sobre() {
 						Excel, capazes de agregar valor aos nossos usuários e os
 						processos de suas respectivas empresas, com qualidade e
 						um preço acessível.
-					</p>
-				</div>
-				<div class="sobre__conteudo--container">
-					<h2 class="sobre__conteudo--titulo titulo--2">
+					</S.ConteudoTexto>
+				</S.ConteudoContainer>
+				<S.ConteudoContainer>
+					<S.ConteudoTitulo $icon="./src/assets/icons/objetivo.png">
 						Nossa Proposta
-					</h2>
-					<p class="sobre__conteudo--texto">
+					</S.ConteudoTitulo>
+					<S.ConteudoTexto>
 						Diversas atividades de uma empresa necessitam de
 						automação e agilidade, ficar no papel e caneta em um
 						mundo tão digitalizado é fora de questão, por outro
@@ -39,12 +40,14 @@ export default function Sobre() {
 						entramos, nosso objetivo é suprir as necessidades dos
 						nossos clientes com planilhas de Excel, com um melhor
 						custo benefício e qualidade.
-					</p>
-				</div>
-				<a class="botao" href="planilhas.html">
-					Conheça nossos produtos!
-				</a>
-			</section>
+					</S.ConteudoTexto>
+				</S.ConteudoContainer>
+				<Button
+					text="Conheça nossos produtos!"
+					color="--laranja"
+					link="/planilhas"
+				/>
+			</S.Conteudo>
 		</main>
 	);
 }
