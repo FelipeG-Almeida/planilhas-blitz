@@ -4,8 +4,17 @@ import { ButtonTemplate } from './styles';
 function Button(props) {
 	const { text, color, link } = props;
 
+	function scrollToOferta() {
+		const component = document.getElementById('oferta');
+		component.scrollIntoView({ behavior: 'smooth', block: 'start' });
+	}
+
 	return (
-		<ButtonTemplate $color={color} to={link}>
+		<ButtonTemplate
+			$color={color}
+			to={link === 'oferta' ? '' : link}
+			onClick={link === 'oferta' ? scrollToOferta : undefined}
+		>
 			{text}
 		</ButtonTemplate>
 	);

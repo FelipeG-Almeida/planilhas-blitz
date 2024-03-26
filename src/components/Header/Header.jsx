@@ -9,12 +9,14 @@ function Header() {
 				<S.Logo src="/logo.png" alt="" />
 				<h2>Planilhas Blitz</h2>
 			</S.HomeButton>
-			<nav>
-				<ul>
+			<S.NavBar>
+				<S.NavList>
 					<S.NavItem $ativo={paginaAtual.pathname === '/'}>
 						<S.NavbarLink to="/">Início</S.NavbarLink>
 					</S.NavItem>
-					<S.NavItem $ativo={paginaAtual.pathname === '/planilhas'}>
+					<S.NavItem
+						$ativo={paginaAtual.pathname.includes('/planilhas')}
+					>
 						<S.NavbarLink to="/planilhas">Planilhas</S.NavbarLink>
 					</S.NavItem>
 					<S.NavItem $ativo={paginaAtual.pathname === '/sobre'}>
@@ -23,8 +25,8 @@ function Header() {
 					<S.NavItem $ativo={paginaAtual.pathname === '/contato'}>
 						<S.NavbarLink to="/contato">Contato</S.NavbarLink>
 					</S.NavItem>
-				</ul>
-			</nav>
+				</S.NavList>
+			</S.NavBar>
 		</S.Header>
 	);
 }

@@ -10,6 +10,7 @@ export const Header = styled.header`
 	font-family: 'Arvo', serif;
 	justify-content: space-between;
 	padding-top: 1rem;
+	z-index: 999;
 
 	@media screen and (min-width: 1024px) {
 		flex-direction: row;
@@ -36,11 +37,17 @@ export const NavBar = styled.nav`
 	text-align: center;
 `;
 
+export const NavList = styled.ul`
+	display: flex;
+	gap: 4px;
+`;
+
 export const NavItem = styled.li`
 	box-sizing: border-box;
 	color: var(--escuro-azul);
 	display: inline-block;
 	font-size: 1.05rem;
+	
 	&:hover {
 		border-bottom: 4px solid var(--escuro-azul);
 	}

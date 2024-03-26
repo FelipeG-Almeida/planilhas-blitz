@@ -1,7 +1,7 @@
 import * as S from './styles';
 import Button from '../../components/Button/Button';
 import Carrosel from '../../components/Carrosel/Carrosel';
-import planilhas from '../../planilhas.json';
+import { planilhas } from '../../planilhas.js';
 
 export default function Home() {
 	return (

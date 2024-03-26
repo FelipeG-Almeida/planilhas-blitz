@@ -108,6 +108,7 @@ export const Mensagem = styled.textarea`
 	border: 2px solid var(--amarelo);
 	border-radius: 5px;
 	font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
 	margin-top: 1rem;
 	outline: none;
 	padding: 1rem;

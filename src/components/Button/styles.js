@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 export const ButtonTemplate = styled(Link)`
 	border: 2px solid var(--branco);
+	border-color: ${({ $color }) => `var(${$color})`};
 	border-radius: 5px;
 	box-sizing: border-box;
 	color: inherit;
@@ -13,12 +14,8 @@ export const ButtonTemplate = styled(Link)`
 	transition: 0.3s all;
 	text-align: center;
 	width: 100%;
-
-	@media screen and (min-width: 1024px) {
-		border-color: ${({ $color }) => `var(${$color})`};
-		&:hover {
-			background-color: ${({ $color }) => `var(${$color})`};
-			color: var(--branco);
-		}
+	&:hover {
+		background-color: ${({ $color }) => `var(${$color})`};
+		color: var(--branco);
 	}
 `;
